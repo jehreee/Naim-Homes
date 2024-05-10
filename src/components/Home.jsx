@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdRoofing } from "react-icons/md";
-import { FaFacebook, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import noBgLogo from "../assets/logos/png/Naim-Homes.png";
 import { Link} from "react-router-dom";
@@ -16,16 +16,16 @@ const Home = () => {
           <FaFacebook size={15} className='ml-3'/>
         </>
       ),
-      href: 'https://facebook.com/'
+      href: 'https://web.facebook.com/profile.php?id=61552761683930'
     },
     {
       id:2,
       child:(
         <>
-          <FaTwitter size={15} className='ml-3'/>
+          <FaInstagram size={15} className='ml-3'/>
         </>
       ),
-      href: 'https://twitter.com/'
+      href: 'https://instagram.com/naimhomes/'
     },
     {
       id:3,
@@ -43,7 +43,7 @@ const Home = () => {
           <HiOutlineMail size={15} className='ml-3'/>
         </>
       ),
-      href: 'mailto:'
+      href: 'mailto:naimhomes01@gmail.com'
     },
     {
       id:5,
@@ -76,7 +76,7 @@ const Home = () => {
                 MES
               </h1>
             
-              <p className='hidden md:flex tracking-wider text-sm mb-15'>If you can imagine it, we can create it</p>
+              <p className='hidden md:flex tracking-wider text-sm mb-15 text-gray-400'>If you can imagine it, we can create it</p>
             </div>
 
           </div>
@@ -100,7 +100,7 @@ const Home = () => {
 
             
           <Link to="/gallery">
-            <button  className='w-fit px-6 py-3 my-2 bg-gray-600 border-2 border-white shadow-md rounded-lg hover:shadow-yellow-600 flex hover:bg-gray-500 font-semibold items-center  transition ease-out duration-300 cursor-pointer'>
+            <button  className='w-fit px-6 py-3 mt-28 md:my-2 bg-gray-600 border-2 border-white shadow-md rounded-lg hover:shadow-yellow-600 flex hover:bg-gray-500 font-semibold items-center  transition ease-out duration-300 cursor-pointer'>
               Gallery
               <span className="hover:rotate-90 transition duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1"/>

@@ -34,7 +34,7 @@ const Nav = () => {
   return (
     <div className='flex justify-between items-center w-full h-10 px-4 text-white bg-white  fixed md:h-14'>
         
-        <a href="./Home" className='font-bold text-gray-700 border-2 border-orange-300 rounded-md'>
+        <a href="./Home" className='font-bold text-gray-700 md:border-2 md:border-yellow-500 rounded-md'>
             <h3 className=' p-2'><span className='tracking-wider md:text-2xl'>NAIM</span><span className="font-navSign font-thin">Homes</span></h3>
                 
         </a>
@@ -42,7 +42,7 @@ const Nav = () => {
 
         <ul className='hidden md:flex'>
             {link.map(( {id, link, style} ) => (
-                <li key={id} className={`px-4 cursor-pointer capitalize  text-gray-500 py-2 font-bold border-orange-300 hover:text-orange-300 ${style}`}>
+                <li key={id} className={`px-4 cursor-pointer capitalize  text-gray-500 py-2 font-bold border-yellow-500 hover:text-orange-300 ${style}`}>
                     {/* Nav bar link to Scroll of not gallery and route to galler if link is gallery */}
                     {link === "gallery" ? <LinkRoute to={"/gallery"}>{link}</LinkRoute> : 
                         <LinkScroll to={link} smooth duration={500}>
